@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
 import Card from "./Card";
-const CarList = () => {
+const ProjectList = () => {
   const { auth } = useAuth();
   const [cars, setCars] = useState([]);
 
@@ -24,7 +24,7 @@ const CarList = () => {
         className="text-xl text-primary text-center font-
          bold my-5"
       >
-        Cars Page
+        Projects Page
       </h2>
       <div
         className="mx-8 grid grid-cols-1 md:grid-cols-2 
@@ -38,4 +38,4 @@ const CarList = () => {
     </div>
   );
 };
-export default CarList;
+export default ProjectList;
