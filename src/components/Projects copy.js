@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
-import Card from "./Card";
-const CarList = () => {
+import Project from "./Project";
+
+const Projects = () => {
   const { auth } = useAuth();
-  const [cars, setCars] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/cars/", {
+    fetch("http://127.0.0.1:8000/projects/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -15,7 +16,7 @@ const CarList = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-        setCars(json);
+        setProjects(json);
       });
   }, []);
   return (
@@ -24,18 +25,18 @@ const CarList = () => {
         className="text-xl text-primary text-center font-
          bold my-5"
       >
-        Cars Page
+        Projects Page
       </h2>
       <div
         className="mx-8 grid grid-cols-1 md:grid-cols-2 
         gap-5 p-4"
       >
-        {cars &&
-          cars.map((el) => {
-            return <Card key={el._id} car={el} />;
+        {projects &&
+          projects.map((el) => {
+            return <Project key={el._id} project={el} />;
           })}
       </div>
     </div>
   );
 };
-export default CarList;
+export default Projects;

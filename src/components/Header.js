@@ -37,7 +37,7 @@ const Header = () => {
           )}
           {!auth?.username && (
             <li className="mx-1">
-              <Link to="/cars">Cars</Link>
+              <Link to="/projects">Projects</Link>
             </li>
           )}
           {auth?.username && (

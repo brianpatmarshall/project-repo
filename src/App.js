@@ -5,7 +5,7 @@ import Register from "./components/Register";
 import HomePage from "./components/HomePage";
 import { AuthProvider } from "./context/AuthProvider";
 import RequireAuthentication from "./components/RequiredAuthentication";
-import CarList from "./components/CarList";
+import Projects from "./components/Projects";
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +16,7 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
             <Route element={<RequireAuthentication />}>
-              <Route path="cars" element={<CarList />} />
+              <Route path="projects" element={<Projects />} />
             </Route>
           </Route>
         </Routes>

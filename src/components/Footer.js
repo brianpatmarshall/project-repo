@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex-1 min-h-full flex flex-col justify-center items-center border-2 border-indigo-200">
-      Footer
-    </div>
+    <div className="flex-1 bg-primary text-primary-content width-3">
+      <p>Accenture</p>
+      </div>
   );
 }
