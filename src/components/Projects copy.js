@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
+<<<<<<<< HEAD:src/components/Projects copy.js
 import Project from "./Project";
 
 const Projects = () => {
+========
+import Card from "./Card";
+const ProjectList = () => {
+>>>>>>>> 24cb535de69438abdc5efeeb6c855f9b04315ae8:src/components/ProjectList.js
   const { auth } = useAuth();
   const [projects, setProjects] = useState([]);
 
@@ -39,4 +44,8 @@ const Projects = () => {
     </div>
   );
 };
+<<<<<<<< HEAD:src/components/Projects copy.js
 export default Projects;
+========
+export default ProjectList;
+>>>>>>>> 24cb535de69438abdc5efeeb6c855f9b04315ae8:src/components/ProjectList.js

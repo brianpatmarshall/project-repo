@@ -4,10 +4,13 @@ import Project from "./Project";
 
 const Projects = () => {
   const { auth } = useAuth();
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState([1, 2, 3]);
+
+
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/projects/", {
+    // fetch("http://127.0.0.1:3000/clients/", {
+    fetch("mongodb+srv://brianpmarshall:Martin!291@cluster0.9q6cjct.mongodb.net/test", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

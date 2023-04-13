@@ -1,0 +1,65 @@
+{
+	"clients": [
+	  {
+		"id": "1",
+		"name": "Farmers",
+		"projects": [
+		  {
+			"name": "PolicyCenter Upgrade",
+			"lobs": [
+			  "Personal Auto",
+			  "Home Owners"
+			],
+			"integrations": [
+			  "Doc Mgmt",
+			  "Doc Mgmt",
+			  "Verisk"
+			]
+		  },
+		  {
+			"name": "ClaimCenter Upgrade",
+			"lobs": [
+			  "Personal Auto",
+			  "Home Owners"
+			],
+			"integrations": [
+			  "CC Doc Mgmt",
+			  "CC Doc Mgmt",
+			  "CC Verisk"
+			]
+		  }
+		]
+	  },
+	  {
+		"id": "2",
+		"name": "State Farmer",
+		"projects": [
+		  {
+			"name": "PolicyCenter Cloud",
+			"lobs": [
+			  "Personal Auto",
+			  "Home Owners"
+			],
+			"integrations": [
+			  "Doc Mgmt",
+			  "Doc Mgmt",
+			  "Verisk"
+			]
+		  },
+		  {
+			"name": "ClaimCenter Cloud",
+			"lobs": [
+			  "Personal Auto",
+			  "Home Owners"
+			],
+			"integrations": [
+			  "CC Doc Mgmt",
+			  "CC Doc Mgmt",
+			  "Verisk"
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

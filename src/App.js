@@ -6,21 +6,22 @@ import HomePage from "./components/HomePage";
 import { AuthProvider } from "./context/AuthProvider";
 import RequireAuthentication from "./components/RequiredAuthentication";
 import Projects from "./components/Projects";
+
 function App() {
   return (
     <BrowserRouter>
-      <AuthProvider>
+      {/* <AuthProvider> */}
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
-            <Route element={<RequireAuthentication />}>
-              <Route path="projects" element={<Projects />} />
-            </Route>
+            <Route path="products" element={<Projects />} />
+            {/* <Route element={<RequireAuthentication />}>
+            </Route> */}
           </Route>
         </Routes>
-      </AuthProvider>
+      {/* </AuthProvider> */}
     </BrowserRouter>
   );
 }

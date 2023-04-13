@@ -3,8 +3,11 @@ import React from 'react'
 export default function Project() {
   return (
     <>
-        <h1>Projects</h1>
-        <div>Project</div>
+        <div>Project
+          <h2>I got here</h2>
+
+        </div>
+        
     </>
   )
 }
